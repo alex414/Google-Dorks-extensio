@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es"> 
+
+    <head> 
+        <title>Buscador para cualquier web.</title> 
+        <link rel="stylesheet" type="text/css" href="miapp.css">
+        <link rel="manifest" href="manifest.json">
+        <meta charset="utf-8" http-equiv="Content-Security-Policy"
+              content="default-src * ;
+                       style-src 'self' 'unsafe-inline';
+                       script-src  'self' 'unsafe-inline' 'unsafe-eval' 'sha256-9nD2VaXzHEQ61oyRJC4hBRHF6EtUP3D+i9re1ZUNbAU='">
+
+    </head> 
+
+    <body onload="function()"> 
+        <fieldset>
+            <FORM method=GET name="a1" id="a1" action="http://www.google.es/search" target="_blank">
+                <script type="text/javascript" src="miapp.js"></script>
+
+                <div class="wey"> 
+                    <img src="google.jpg" width="100px" height="100px">
+
+                    <input type=radio id="a" name="a" value="" />Busqueda normal :<br><br>  
+
+                    <input type=radio id="b" name="a" value="filetype:" />Por Extension : (sin ".")<br><br>
+
+                    <input type=radio id="b1" name="a" value="filetype:" />Por extension y nombre : (Ext + " " + String ) <br><br>
+
+                    <input type=radio id="c" name="a" value="author:" />Por autor : (String)<br><br>
+
+                    <input type=radio id="d" name="a" value="inurl:" />Busqueda de archivo + sitio (pass.txt + " " + com)<br><br>
+
+                    <input type=radio id="e" name="a" value="site:" />String exactos : (URL + " " + String)<br><br>
+
+                    <input type=radio id="f" name="a" value="link:" />Que redireccionen a la pagina introducida(URL)<br><br>
+
+                    <input type=radio id="g" name="a" value="site:" />Enlace y palabra clave (google.es + fraude)<br><br>
+
+                    <input type=radio id="h" name="a" value="all filetype:" />Introducir Ext sin (.) + String + url
+
+                    <p>Esta de arriba es jodida para buscar pero es la mas restricitva</p>
+                    <br>
+
+                    <Input TYPE=text class="texto" name="q" id="q" value="" placeholder="Primero selecciona una opcion.."/> 
+                    <br><br>
+                    <input type="reset" class="y" name="fasf" value="Borrar"/>
+
+
+                    <Input type="submit" id="x" class="x" name=btnG VALUE="Buscar"  />
+                    <input type="button" id="z" class="z" name="fanta" value="Refrescar" />
+
+                </div>
+            </FORM> 
+        </fieldset>
+    </body> 
+
+</html>

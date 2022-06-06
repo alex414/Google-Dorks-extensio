@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "Searcher",
+    "version": "3.0",
+
+    "author": "Lex414",
+
+    "description": "Buscador to guapo",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+
+    "browser_action": {
+        "default_icon": "icon128.png",
+        "default_title": "Searcher",
+        "default_popup": "Miapp.html"
+
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["http://www.google.es/search"],
+            "css": ["miapp.css"],
+            "js": ["miapp.js"]
+        }
+    ],
+    "homepage_url":"https://www.instagram.com/alexdd15/",   
+    "offline_enabled": false
+}
